@@ -50,7 +50,7 @@ Core flows
 
 ```graphql
 mutation {
-  register(username: "alice", password: "secret") {
+  register(username: "rajan", password: "secret") {
     id
     username
   }
@@ -61,7 +61,7 @@ mutation {
 
 ```graphql
 mutation {
-  login(username: "alice", password: "secret") {
+  login(username: "rajan", password: "secret") {
     accessToken
     tokenType
   }
@@ -146,7 +146,7 @@ GraphQL usage examples
 
 ```graphql
 mutation {
-  register(username: "alice", password: "secret") {
+  register(username: "rajan", password: "secret") {
     id
     username
   }
@@ -157,7 +157,7 @@ mutation {
 
 ```graphql
 mutation {
-  login(username: "alice", password: "secret") {
+  login(username: "rajan", password: "secret") {
     accessToken
     tokenType
   }
