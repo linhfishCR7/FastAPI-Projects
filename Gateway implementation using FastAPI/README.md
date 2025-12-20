@@ -114,7 +114,7 @@ flowchart LR
 		Client --> Gateway[API Gateway]
 		Gateway --> Orders[Orders Service]
 		Gateway --> Products[Products Service]
-		Orders --> Auth[Auth Service]
+		Gateway --> Auth[Auth Service]
 ```
 
 Conversation (design rationale)
