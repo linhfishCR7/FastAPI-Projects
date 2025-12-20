@@ -55,6 +55,17 @@ GraphQL is a query language for APIs and a runtime for executing those queries b
     > GraphQL primarily uses a single endpoint for all requests, and the HTTP status code is usually 200 OK for successful requests, regardless of whether the operation was a query or mutation. However, if there are errors in processing the request (e.g., syntax errors, validation errors), the server may return appropriate HTTP status codes like 400 Bad Request or 500 Internal Server Error. The actual error details are included in the response body, allowing clients to understand what went wrong while still receiving any valid data.  
 
 
+In GraphQL There are challenges as well:
+
+- Version management: As we seen in It there is always of existing this but when it is rest it is easy to manage versioning but in GraphQL it is bit difficult because we have single endpoint so instead of to create a new version we have to deprecate the fields.
+
+- Performance issues: GraphQL queries can be complex and may lead to performance issues if not optimized properly. Over-fetching or under-fetching of data can occur if the queries are not designed efficiently.
+
+- File uploading: GraphQL does not have built-in support for file uploads, which can be a challenge when dealing with media files.
+
+- Caching: Caching can be more complex in GraphQL due to the dynamic nature of queries. Traditional caching mechanisms may not work effectively, requiring more sophisticated caching strategies.
+
+
 
 
 
