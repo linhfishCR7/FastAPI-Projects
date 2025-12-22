@@ -1,12 +1,11 @@
-# FastAPI Gateway Example
-This repository demonstrates a simple API Gateway implemented with FastAPI that routes requests to multiple downstream services (orders, products, users/auth). The gateway performs token validation, request forwarding (proxy), and injects a verified user identity header to upstream services when applicable.
+# Gateway Implementation using FastAPI
+This repository demonstrates API Gateway implemented with FastAPI that routes requests to multiple downstream services (orders, products, users/auth). The gateway performs token validation, request forwarding (proxy), and injects a verified user identity header to upstream services when applicable.
 
 Contents
 - `gateway/` — gateway FastAPI application and configuration
 - `orders/` — example Orders service (FastAPI)
 - `products/` — example Products service (FastAPI)
 - `users/` — example Users/Auth service (FastAPI + auth helpers)
-- `env/` — optional virtualenv for local development (if present)
 
 Goals
 - Provide a small, runnable example of an API gateway using FastAPI
@@ -141,5 +140,5 @@ Next steps
 
 ---
 
-Author: example
+Author: Rajan Sahu
 
